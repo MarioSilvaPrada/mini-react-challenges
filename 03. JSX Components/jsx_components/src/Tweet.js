@@ -3,25 +3,21 @@ import React from 'react';
 import Avatar from './components/Avatar';
 import Message from './components/Message';
 import NameWithHandle from './components/NameWithHandle';
-import LikeButton from './components/ActionIcons/LikeButton';
-import MoreOptionsButton from './components/ActionIcons/MoreOptionsButton';
-import ReplyButton from './components/ActionIcons/ReplyButton';
-import RetweetButton from './components/ActionIcons/RetweetButton';
+import ActionIcon from './components/ActionIcon';
+import Time from './components/Time';
 
 
 const Tweet = () => {
     return (
-        <div className = "tweet">
+        <div className="tweet">
             <Avatar />
             <div className="content">
-                <NameWithHandle />
+                <div className="header">
+                    <NameWithHandle />
+                    <Time />
+                </div>
                 <Message />
-            </div>
-            <div className="buttons">
-                <ReplyButton />
-                <RetweetButton />
-                <LikeButton />
-                <MoreOptionsButton />
+                <ActionIcon />
             </div>
         </div>
     )
