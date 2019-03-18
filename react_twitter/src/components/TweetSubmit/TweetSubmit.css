@@ -1,0 +1,42 @@
+.submit-form {
+    width: 600px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+}
+ header {
+     display: flex;
+     justify-content: space-between;
+     background: rgb(51, 204, 255);
+     border-radius: 5px;
+ }
+
+ .avatar {
+    margin-top: 4px;
+ }
+
+img {
+    width: 150px;
+    height: 56px;
+    border-radius: 5px;
+}
+
+h3 {
+    align-self: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+.tweet-btn {
+    align-self: flex-end;
+    width: 70px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #7d7e7d; background-image: -webkit-gradient(linear, left top, left bottom, from(#7d7e7d), to(#0e0e0e));
+    border: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
