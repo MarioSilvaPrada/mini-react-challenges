@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Message = () => {
+import './Message.css'
+
+const Message = (props) => {
     return (
-        <p>This is less than 140 characters</p>
+        <p>{props.userMessage}</p>
     )
 }
 

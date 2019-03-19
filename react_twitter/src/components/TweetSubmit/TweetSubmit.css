@@ -40,3 +40,8 @@ form {
     font-weight: bold;
     border-radius: 3px;
 }
+
+.tweet-btn:hover {
+    cursor: pointer;
+    background-color: #646464; background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#282828));
+}

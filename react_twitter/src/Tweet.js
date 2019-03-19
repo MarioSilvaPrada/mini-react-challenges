@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Tweet.css'
+
 import Avatar from './components/Avatar';
 import Message from './components/Message';
 import NameWithHandle from './components/NameWithHandle';
@@ -7,7 +9,7 @@ import ActionIcon from './components/ActionIcon';
 import Time from './components/Time';
 
 
-const Tweet = () => {
+const Tweet = (props) => {
     return (
         <div className="tweet">
             <Avatar />
@@ -16,7 +18,7 @@ const Tweet = () => {
                     <NameWithHandle />
                     <Time />
                 </div>
-                <Message />
+                <Message userMessage={props.userMessage}/>
                 <ActionIcon />
             </div>
         </div>
